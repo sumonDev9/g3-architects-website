@@ -131,7 +131,55 @@ gap: 24px;
 .feature-description{
     margin-bottom: 32px;
 }
-
+/* feature  */
+.feature{
+    /* height:760px; */
+    border: 2px solid red;
+    gap: 100px;
+    
+}
+.feature-container{
+    height: 677px;
+    padding: 15px 0;
+}
+#feature-section-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+.feature-section-desricption{
+    margin-bottom: 30px;
+    max-width: 582px;
+}
+.feature-card{
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    background: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    /* max-width: 582px; */
+    /* height: 117px; */
+}
+.feature-card .feature-title{
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  
+}
+.feature .images-box-architech img{
+    height: 677px;
+    /* width: 100%; */
+}
+#experience-badge{
+    padding: 40px 37px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -55px;
+    margin-top: -90px;
+}
+#experience-year{
+    font-weight: 700;
+    font-size: 45px;
+}
 /* some facts ralated styles */
 .fact-container{
     display: grid;
@@ -182,7 +230,10 @@ gap: 24px;
 
 /* responsive media query */
 @media screen and (max-width: 576px) {
-    .navbar, .nav-links, .teams{
+    .navbar,
+     .nav-links,
+      .teams,
+      .feature{
         flex-direction: column;
     }
     .banner-image{
@@ -209,6 +260,18 @@ gap: 24px;
     .our-features{
         margin-left: 20px;
     }
+    #experience-badge{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    .feature .images-box-architech img{
+        margin-top: 50px;
+        width: 100%;
+    }
+    .feature{
+        padding: 10px;
+    }
+ 
 }
 
 /* medium size device */
@@ -217,10 +280,13 @@ gap: 24px;
         width: 100%;
         height: 100%;
     }
-    .teams{
+    .teams, .feature{
         flex-direction: column;
     }
-
+    #experience-badge{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
     .our-features{
         margin: 50px auto;
     }
@@ -229,4 +295,8 @@ gap: 24px;
         gap: 50px;
         justify-items: center;
     }
+    .feature .images-box-architech img{
+        width: 100%;
+    }
+   
 }
